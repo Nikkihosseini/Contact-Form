@@ -9,7 +9,26 @@
 </head>
 <body>
     
-
+     <div class="contactUs">
+        <h2 class="contactUs-title">Contact Us</h2>
+        <form class="contactUs-form" action="#">
+            <div class="contactUs-name">
+                <label class="first-name__label" for="fmane">First Name</label>
+                <input class="first-name__input" type="text" id="fname" name="fmane">
+                <label class="last-name__label" for="lname">Last Name</label>
+                <input class="last-name__input" type="text" id="lname" name="lname">
+            </div>
+            <input class="contactUs-email" type="email" id="email" name="email">
+            <div class="query-type">
+                <input class="general-enquiry" type="checkbox" name="general-enquiry" id="general-enquiry">
+                <input class="support-request" type="checkbox" name="support-request" id="support-request">
+            </div>
+            <label class="textarea-label" for="textarea"></label>
+            <textarea class="textarea" name="textarea" id="textarea"></textarea>
+            <input class="contactUs-checkbox" type="checkbox" name="contactUs-checkbox" id="contact-Us-checkbox">
+            <button class="contactUs-btb" type="submit">Submit</button>
+        </form>
+     </div>
     <script src="./script/app.js"></script>
 </body>
 </html>

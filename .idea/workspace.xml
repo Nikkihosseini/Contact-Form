@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="32be4db7-a2fa-421e-b74a-ae883b48cfb8" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/fonts/karla/Karla-Bold.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fonts/karla/Karla-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon-checkbox-check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon-radio-selected.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/images/icon-success-check.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/app.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/fonts.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/reset.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/responsive.css" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="2nwPAQeXgHOwKlyjjBKLTkUoeoU" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-PS-242.23339.16" />
+        <option value="bundled-php-predefined-a98d8de5180a-90914f2295cb-com.jetbrains.php.sharedIndexes-PS-242.23339.16" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="32be4db7-a2fa-421e-b74a-ae883b48cfb8" name="Changes" comment="" />
+      <created>1729881023546</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1729881023546</updated>
+      <workItem from="1729881024048" duration="5000" />
+    </task>
+    <servers />
+  </component>
+</project>
