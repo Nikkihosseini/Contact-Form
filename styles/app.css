@@ -55,7 +55,6 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
 }
 
 /* 
@@ -82,13 +81,12 @@ Contact Us
     position: relative;
     background-color: var(--White);
     border-radius: 1rem;
-    padding: 2rem;
-    width: 40%;
+    padding: 1rem;
 }
 .contactUs-title{
     font-size: 1.8rem;
     font-weight: 700;
-    margin-bottom: 1.8rem;
+    margin-bottom: 1.2rem;
 }
 .contactUs-form{
 
@@ -99,6 +97,7 @@ Contact Us
     justify-content: space-between;
     gap: 1.2rem;
     width: 100%;
+    flex-direction: column;
 }
 
 
@@ -140,7 +139,7 @@ Contact Us
 
 }
 .contactUs-query-type{
-    
+   
 }
 .contactUs-query-type__lable{
     display: block;
@@ -151,6 +150,7 @@ Contact Us
     justify-content: space-between;
     gap: 1.2rem;
     margin-top: 0.5rem;
+    flex-direction: column;
 }
 
 .contactUs-general{
@@ -196,7 +196,7 @@ Contact Us
     accent-color: var(--medium-green);
 }
 .contactUs-text{
-    margin-top: 1rem;
+    margin-top: 1.2rem;
 }
 
 .textarea-label{
@@ -219,6 +219,7 @@ Contact Us
     align-items: center;
     gap: 0.5rem;
     margin: 1.8rem 0;
+    max-width: 15rem;
 }
 .contactUs-checkbox__input{
     height: 1rem;
@@ -227,7 +228,7 @@ Contact Us
     accent-color: var(--medium-green);
 }
 .contactUs-checkbox__label{    
-
+ 
 }
 .contactUs-btn{
     font-weight: bold;
