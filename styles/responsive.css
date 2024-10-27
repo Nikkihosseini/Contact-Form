@@ -17,13 +17,33 @@
 
 
 @media (min-width: 768px){
-
+    body{
+        height: 100vh;
+    }
+  
+    .contactUs{
+        padding: 2rem;
+    }
+    .contactUs-name,
+    .contactUs-query-type__wrapper{
+       flex-direction: row;
+    }
+    .contactUs-title{
+        font-size: 1.8rem;
+        font-weight: 700;
+        margin-bottom: 1.8rem;
+    }
+    .contactUs-checkbox{
+        max-width: 18rem;
+    }
 
 }
 
 
 @media (min-width: 992px){
-
+    .contactUs{
+        width: 40%;
+    }
 
 }
 
