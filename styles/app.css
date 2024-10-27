@@ -13,13 +13,14 @@
 */
 
 input{
-    outline: none;
+    outline-color: var(--medium-green);
     display: block;
     border-radius: 0.5rem;
     padding: 0 0.5rem;
     border:1.5px solid var(--light-gray);
     height: 2.5rem;
     width: 100%;
+    margin-top: 0.5rem;
 }
 
 /* 
@@ -45,7 +46,7 @@ html{
 body{
     font-family: "Roboto Regular";
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.8rem;
     line-height: 1.5;
     background-color: var(--light-green);
     color: var(--dark-gray);
@@ -82,10 +83,10 @@ Contact Us
     background-color: var(--White);
     border-radius: 1rem;
     padding: 2rem;
-    width: 50%;
+    width: 40%;
 }
 .contactUs-title{
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     margin-bottom: 1.8rem;
 }
@@ -139,7 +140,7 @@ Contact Us
 
 }
 .contactUs-query-type{
- 
+    
 }
 .contactUs-query-type__lable{
     display: block;
@@ -149,6 +150,7 @@ Contact Us
     align-items: center;
     justify-content: space-between;
     gap: 1.2rem;
+    margin-top: 0.5rem;
 }
 
 .contactUs-general{
@@ -162,13 +164,15 @@ Contact Us
 }
 
 .contactUs-general__label{
-
+     margin-left: 0.5rem;
 }
 
 .contactUs-general__input{
     border-radius: 100%;
     height: 1rem;
     width: 1rem;
+    margin-top: 0;
+    accent-color: var(--medium-green);
 }
 
 .contactUs-support{
@@ -182,23 +186,24 @@ Contact Us
 }
 
 .contactUs-support__label{
-
+     margin-left: 0.5rem;     
 }
 .contactUs-support__input{
     border-radius: 100%;
     height: 1rem;
     width: 1rem;
-    vertical-align: middle;
+    margin-top: 0;
+    accent-color: var(--medium-green);
 }
 .contactUs-text{
-
+    margin-top: 1rem;
 }
 
 .textarea-label{
 
 }
 .textarea{
-    outline: none;
+    outline-color: var(--medium-green);
     border-color: var(--light-gray);
     display: block;
     border-radius: 0.5rem;
@@ -207,25 +212,47 @@ Contact Us
     width: 100%;
     height: 7rem;
     resize: none;
+    margin-top: 0.5rem;
 }
 .contactUs-checkbox{
-
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 1.8rem 0;
 }
 .contactUs-checkbox__input{
+    height: 1rem;
+    width: 1rem;
+    margin-top: 0;
+    accent-color: var(--medium-green);
+}
+.contactUs-checkbox__label{    
 
 }
-.contactUs-checkbox__label{
-
+.contactUs-btn{
+    font-weight: bold;
+    color: var(--White);
+    width: 100%;
+    height: 2.8rem;
+    border: none;
+    outline: none;
+    background-color: var(--medium-green);
+    border-radius: 0.5rem;
+    cursor: pointer;
 }
-.contactUs-bt{
 
+.contactUs-email,
+.contactUs-query-type{
+    margin-top: 1.5rem;
 }
+
 
 .contactUs-query-type__lable::after,
 .first-name__label::after,
 .last-name__label::after,
 .contactUs-email__label::after,
-.textarea-label::after{
+.textarea-label::after,
+.contactUs-checkbox__label::after{
     content: '*';
     position: absolute;
     color: var(--medium-green);
