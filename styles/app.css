@@ -12,6 +12,7 @@
 
 */
 
+
 input{
     outline-color: var(--medium-green);
     display: block;
@@ -21,6 +22,12 @@ input{
     height: 2.5rem;
     width: 100%;
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+
+.svg{
+    display: none;
 }
 
 /* 
@@ -55,6 +62,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 
 /* 
@@ -74,10 +82,53 @@ Container
 
 
 /* 
-Contact Us
+ App Module
 */
 
+
+.module{
+    background-color: var(--dark-gray);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: var(--White);
+    position: absolute;
+    top: 0.5rem;
+    right: auto;
+    left: auto;
+    margin: 0 auto;
+    z-index: 99;
+    max-width: 12rem;
+    display: none;
+    transition: all 150ms ease-in-out;
+}
+.module-title{
+     display: flex;
+     align-items: center;
+     margin-bottom: 0.6rem;
+}
+.module-title__svg{
+    width: 1.4rem;
+    height: 1.4rem;
+}
+.module-title__text{
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-left: 0.5rem;
+}
+.module-title__content{
+    color: var(--light-green);
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+/* 
+contactUs Form
+*/
+
+
+
 .contactUs{
+    margin: auto;
     position: relative;
     background-color: var(--White);
     border-radius: 1rem;
@@ -151,16 +202,16 @@ Contact Us
     gap: 1.2rem;
     margin-top: 0.5rem;
     flex-direction: column;
+    margin-bottom: 0.5rem;
+}
+
+.query-type--active{
+    border: 0.1rem solid var(--medium-green) !important;
+    background-color: var(--light-green);
 }
 
 .contactUs-general{
-    width: 100%;
-    border:1.5px solid var(--light-gray);
-    display: flex;
-    align-items: center;
-    padding: 0 0.5rem;
-    height: 2.5rem;
-    border-radius: 0.5rem;
+
 }
 
 .contactUs-general__label{
@@ -168,14 +219,14 @@ Contact Us
 }
 
 .contactUs-general__input{
-    border-radius: 100%;
-    height: 1rem;
-    width: 1rem;
-    margin-top: 0;
-    accent-color: var(--medium-green);
+
 }
 
 .contactUs-support{
+  
+}
+.contactUs-support,
+.contactUs-general{
     width: 100%;
     border:1.5px solid var(--light-gray);
     display: flex;
@@ -189,10 +240,13 @@ Contact Us
      margin-left: 0.5rem;     
 }
 .contactUs-support__input{
+
+}
+.contactUs-support__input,
+.contactUs-general__input{
     border-radius: 100%;
     height: 1rem;
     width: 1rem;
-    margin-top: 0;
     accent-color: var(--medium-green);
 }
 .contactUs-text{
@@ -213,13 +267,17 @@ Contact Us
     height: 7rem;
     resize: none;
     margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 .contactUs-checkbox{
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
     margin: 1.8rem 0;
     max-width: 15rem;
+}
+.contactUs-checkbox__wrapper{
+    display: flex;
+    align-items: start;
+    gap: 0.5rem;
+    margin-bottom: 0.5rem;
 }
 .contactUs-checkbox__input{
     height: 1rem;
@@ -228,7 +286,7 @@ Contact Us
     accent-color: var(--medium-green);
 }
 .contactUs-checkbox__label{    
- 
+   
 }
 .contactUs-btn{
     font-weight: bold;
@@ -259,4 +317,19 @@ Contact Us
     color: var(--medium-green);
     margin-left: 0.5rem;
 
+}
+
+/* 
+Required Message
+*/
+
+.fmane-required,
+.lname-required,
+.email-required,
+.valid-email,
+.queryType-required,
+.textarea-required,
+.checkbox-required{
+    color: var(--red);
+    display: none;
 }
