@@ -144,7 +144,6 @@ contactUs Form
 }
 .contactUs-name{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 1.2rem;
     width: 100%;
@@ -197,7 +196,6 @@ contactUs Form
 }
 .contactUs-query-type__wrapper{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 1.2rem;
     margin-top: 0.5rem;
@@ -211,11 +209,11 @@ contactUs Form
 }
 
 .contactUs-general{
-
+    
 }
 
 .contactUs-general__label{
-     margin-left: 0.5rem;
+
 }
 
 .contactUs-general__input{
@@ -223,7 +221,7 @@ contactUs Form
 }
 
 .contactUs-support{
-  
+    
 }
 .contactUs-support,
 .contactUs-general{
@@ -234,11 +232,19 @@ contactUs Form
     padding: 0 0.5rem;
     height: 2.5rem;
     border-radius: 0.5rem;
+    cursor: pointer;
 }
 
 .contactUs-support__label{
-     margin-left: 0.5rem;     
+   
 }
+
+.contactUs-general__label,
+.contactUs-support__label{
+    margin-left: 0.5rem;  
+    cursor: pointer; 
+}
+
 .contactUs-support__input{
 
 }
@@ -248,6 +254,7 @@ contactUs Form
     height: 1rem;
     width: 1rem;
     accent-color: var(--medium-green);
+    cursor: pointer;
 }
 .contactUs-text{
     margin-top: 1.2rem;
