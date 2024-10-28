@@ -31,11 +31,15 @@
     .contactUs-title{
         font-size: 1.8rem;
         font-weight: 700;
-        margin-bottom: 1.8rem;
+        margin-bottom: 1rem;
     }
     .contactUs-checkbox{
         max-width: 18rem;
     }
+    .module{
+        max-width: 100%;
+    }
+
 
 }
 
