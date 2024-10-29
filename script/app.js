@@ -18,10 +18,9 @@ const textarea = $.querySelector('.textarea')
 const textareaRequired = $.querySelector('.textarea-required')
 const contactUsCheckboxInput = $.querySelector('.contactUs-checkbox__input')
 const checkboxRequired = $.querySelector('.checkbox-required')
-
-
 const subBtn = $.querySelector('.contactUs-btn')
 
+//! Functions//////////////////////////////////////////
 
 function nameValidation(inputValue , required){
     if(inputValue.value == ""){
@@ -39,7 +38,6 @@ function queryTypeValidation(value1 , value2){
     }
 }
 
-
 function checkClassName(value1 , value2){
     value1.checked = true;
     value2.classList.toggle("query-type--active");
@@ -50,6 +48,7 @@ function checkClassName(value1 , value2){
     }
 }
 
+//* Submit Btn///////////////////////////////////////
 
 subBtn.addEventListener('click', (event)=>{
     event.preventDefault()
@@ -90,6 +89,7 @@ subBtn.addEventListener('click', (event)=>{
 
 })
 
+//? Query Type Event/////////////////////////////////////
 
 contactUsGeneral.addEventListener('click' , () =>{
     contactUsSupportInput.checked = false;
