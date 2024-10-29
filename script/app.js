@@ -14,6 +14,10 @@ const contactUsGeneralInput = $.querySelector('.contactUs-general__input')
 const queryTypeRequired = $.querySelector('.queryType-required')
 const contactUsGeneralLabel = $.querySelector('.contactUs-general__label')
 const contactUsSupportLabel = $.querySelector('.contactUs-support__label')
+const textarea = $.querySelector('.textarea')
+const textareaRequired = $.querySelector('.textarea-required')
+const contactUsCheckboxInput = $.querySelector('.contactUs-checkbox__input')
+const checkboxRequired = $.querySelector('.checkbox-required')
 
 
 const subBtn = $.querySelector('.contactUs-btn')
@@ -52,7 +56,6 @@ subBtn.addEventListener('click', (event)=>{
 
     let emailValidation = regex.test(emailInput.value)
     console.log(emailValidation)
-    console.log(emailInput.value)
     
     
     nameValidation(fnameInput , fmaneRequired)
@@ -71,6 +74,18 @@ subBtn.addEventListener('click', (event)=>{
     }
 
     queryTypeValidation(contactUsGeneralInput ,contactUsSupportInput)
+    
+    if(textarea.value == ""){
+      textareaRequired.style.display = "block";
+    } else{
+       textareaRequired.style.display = "none";
+    }
+
+    if(contactUsCheckboxInput.checked == true){
+        checkboxRequired.style.display = "none";
+    }else{
+        checkboxRequired.style.display = "block";
+    }
 
 
 })
