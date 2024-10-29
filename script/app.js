@@ -10,31 +10,13 @@ const lnameRequired = $.querySelector('.lname-required')
 const contactUsGeneral = $.querySelector('.contactUs-general')
 const contactUsSupport = $.querySelector('.contactUs-support')
 const contactUsSupportInput = $.querySelector('.contactUs-support__input')
-const contactUsgeneralInput = $.querySelector('.contactUs-general__input')
-
-
-console.log(queryTypecheck(contactUsgeneralInput, contactUsSupportInput, contactUsGeneral, contactUsSupport))
-
-function queryTypecheck(Input1 ,queryType1, Input2 , queryType2){
-    Input1.checked = false;
-    queryType1.classList.toggle("query-type--active");
-    Input2.checked = true;
-    queryType2.classList.toggle("query-type--active");
-}
-
-
-contactUsGeneral.addEventListener('click' , queryTypecheck(contactUsSupportInput, contactUsSupport, contactUsgeneralInput ,contactUsGeneral))
-contactUsSupport.addEventListener('click' , queryTypecheck(contactUsgeneralInput, contactUsGeneral, contactUsSupportInput ,contactUsSupport))
-
-
-// contactUsSupportInput.checked = false;
-// contactUsSupport.classList.toggle("query-type--active");
-// contactUsgeneralInput.checked = true;
-// contactUsGeneral.classList.toggle("query-type--active");
+const contactUsGeneralInput = $.querySelector('.contactUs-general__input')
+const queryTypeRequired = $.querySelector('.queryType-required')
+const contactUsGeneralLabel = $.querySelector('.contactUs-general__label')
+const contactUsSupportLabel = $.querySelector('.contactUs-support__label')
 
 
 const subBtn = $.querySelector('.contactUs-btn')
-
 
 
 function nameValidation(inputValue , required){
@@ -45,12 +27,32 @@ function nameValidation(inputValue , required){
     }
 }
 
+function queryTypeValidation(value1 , value2){
+    if(value1.checked == true || value2.checked == true){
+        queryTypeRequired.style.display = "none";
+    }else if(value1.checked == false && value2.checked == false){
+        queryTypeRequired.style.display = "block";
+    }
+}
+
+
+function checkClassName(value1 , value2){
+    value1.checked = true;
+    value2.classList.toggle("query-type--active");
+    if(value2.classList.contains("query-type--active")){
+        value1.checked = true;
+    } else {
+        value1.checked = false;
+    }
+}
+
 
 subBtn.addEventListener('click', (event)=>{
     event.preventDefault()
 
     let emailValidation = regex.test(emailInput.value)
     console.log(emailValidation)
+    console.log(emailInput.value)
     
     
     nameValidation(fnameInput , fmaneRequired)
@@ -67,8 +69,34 @@ subBtn.addEventListener('click', (event)=>{
         emailRequired.style.display = "none";
         validEmail.style.display = "none";
     }
-   
+
+    queryTypeValidation(contactUsGeneralInput ,contactUsSupportInput)
 
 
 })
+
+
+contactUsGeneral.addEventListener('click' , () =>{
+    contactUsSupportInput.checked = false;
+    contactUsSupport.classList.remove("query-type--active");
+    checkClassName(contactUsGeneralInput , contactUsGeneral)
+})
+
+contactUsSupport.addEventListener('click' , () =>{
+    contactUsGeneralInput.checked = false;
+    contactUsGeneral.classList.remove("query-type--active");
+    checkClassName(contactUsSupportInput , contactUsSupport)
+})
+
+contactUsGeneralLabel.addEventListener('click', () =>{
+    contactUsSupportInput.checked = false;
+    contactUsSupport.classList.remove("query-type--active");
+    checkClassName(contactUsGeneralInput , contactUsGeneral)
+})
+contactUsSupportLabel.addEventListener('click', () =>{
+    contactUsGeneralInput.checked = false;
+    contactUsGeneral.classList.remove("query-type--active");
+    checkClassName(contactUsSupportInput , contactUsSupport)
+})
+
     
